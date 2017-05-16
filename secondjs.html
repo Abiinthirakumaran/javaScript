@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+<title>javascript</title>
+<body>
+  <p id="demo"> </p>
+  <script>
+  txt1="what a very";
+  txt1 +="nice day";
+  document.getElementById("demo").innerHTML=txt1
+  </script>
+<p id="first"> </p>
+  <script>
+  var X=10;
+  X +=5;
+  document.getElementById("first").innerHTML=X;
+  </script>
+  <p id="second"> </p>
+    <script>
+    var X="10";
+    X +="5";
+    document.getElementById("second").innerHTML=X;
+    </script>
+
+    <p id="three"> </p>
+      <script>
+      var carname1="Volvo XC60";
+      var carname2="Volvo XC60";
+      var answer1="it's a alright";
+      var answer2="He is called 'johnny'";
+      var answer3="He is called 'Johnny'";
+      document.getElementById("three").innerHTML=
+      carname1+"<br>"+
+      carname2+"<br>"+
+      answer1+"<br>"+
+      answer2+"<br>"+
+      answer3;
+      </script>
+
+      <p id="four"> </p>
+        <script>
+        var cars=["Volvo XC60", "BMW", "saab"];
+        document.getElementById("four").innerHTML= cars[0];
+</script>
+
+      <p id="five"> </p>
+      <script>
+        var cars=["Volvo XC60", "BMW", "saab"];
+        document.getElementById("five").innerHTML= cars;
+</script>
+
+
+      <p id="six"> </p>
+      <script>
+        var person ={
+          firstname:"Jone",
+          lastname:"kajan",
+          age:50,
+          eyecolor:"blue"
+        };
+        document.getElementById("six").innerHTML= person.firstname+" is  " +person.age+ "years old";
+
+</script>
+
+<p id="seven"> </p>
+<script>
+  var person ={
+    firstname:"Abi",
+    lastname:"kajan",
+    age:50,
+    eyecolor:"blue"
+  };
+  document.getElementById("seven").innerHTML= person.firstname+"'s eyecolor is " +person.eyecolor;
+</script>
+
+<p id="eight"> </p>
+<script>
+document.getElementById("eight").innerHTML=
+typeof 0 +"<br>"+
+typeof 314 +"<br>"+
+typeof 3.14 +"<br>"+
+typeof (3) +"<br>"+
+typeof "Jone" + "<br>"+
+typeof [1,2,3,4]+"<br>"+
+typeof true +"<br>"+
+
+typeof {name:'Jhone',age:34} +"<br>"+
+typeof function myFunc(){};
+</script>
+
+<p id="nine"> </p>
+<script>
+function myFunction (p1,p2){
+return p1 * p2;
+}
+document.getElementById("nine").innerHTML=myFunction(4,3);
+
+</script>
+
+<p id="ten"> </p>
+<script>
+function myFunction (p1,p2){
+return p1+p2/2;
+}
+document.getElementById("ten").innerHTML=myFunction(4,4);
+
+</script>
+
+<p id="eleven"> </p>
+<script>
+function myFunction (f){
+return f-32 * 9/5;
+}
+document.getElementById("eleven").innerHTML=myFunction(90);
+
+</script>
+
+<p id="twel"> </p>
+<script>
+  var person ={
+    firstname:"Jone",
+    lastname:"kajan",
+    age:50,
+    eyecolor:"blue"
+  };
+  document.getElementById("twel").innerHTML= person["firstname"]+"  " + person["lastname"];
+
+</script>
+
+<p id="tt"> </p>
+
+<script>
+var person = {
+      firstname:"abi",
+      lastname:"kajan",
+    age:"20",
+    city:"jaffna",
+    firstname:"kavi",
+    lastname:"pavan",
+    age:"30",
+    city:"nallur"
+};
+document.getElementById("tt").innerHTML="name:-"+person["firstname"]+" "+person["lastname"]+"<br>"+
+"age:-"+person["age"]+"<br>"+
+"city:-"+person["city"]+"<br>"+
+"name:-"+person["firstname"]+" "+person["lastname"]+"<br>"+
+"age:-"+person["age"]+"<br>"+
+"city:-"+person["city"]+"<br>"+
+
+
+
+</script>
+
+</body>
+</html>

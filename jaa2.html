@@ -1,0 +1,77 @@
+<html>
+<head>
+</head>
+<body>
+
+  <p id="demo"> </p>
+<script>
+var Day;
+switch (new Date() .getDay()){
+  case 0:
+  day="sunday";
+  break;
+
+  case 1:
+  day="monday";
+  break;
+
+  case 2:
+  dat="tuesday";
+  break;
+
+  case 3:
+  day="wednesday";
+  break;
+
+  case 4:
+  day="thurstday";
+  break;
+
+  case 5:
+  day="friday";
+  break;
+
+  case 6:
+  day="saturdy";
+  break;
+
+  default:
+  day="unknown";
+}
+document.getElementById("demo").innerHTML="Today is " + day;
+</script>
+
+
+<br>
+<p id="demo1"> </p>
+<script>
+var numb;
+switch (new Date().getMonth())
+{
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+  numb="31days";
+  break;
+    case 4:
+    case 6:
+    case 11:
+    numb="30days";
+    break;
+
+    case 2:
+    numb="29/28days";
+    break;
+
+  default:
+  numb="unknown";
+}
+document.getElementById("demo1").innerHTML="This month " + numbs;
+</script>
+
+</body>
+</html>

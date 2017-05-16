@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<title>javascript</title>
+<body>
+<h2> what can javaScript do</h2>
+<p id="demo"> java script can  change to html </p>
+
+<button type="button" onclick="document. getElementById('demo').innerHTML='hellow javaScri!'"> click me </button>
+<p id="back"> java script can  change to html </p>
+
+<button type="button" onclick="document. getElementById('back').style.fontSize='35px'"> click me </button>
+
+<p id="two"> java script can  change to html </p>
+
+<button type="button" onclick="document. getElementById('two').style.color='green'"> click me </button> <br>
+<p id="three"> java script can  change to html </p>
+
+<button type="button" onclick="document. getElementById('three').style.display='none'"> click me </button> <br>
+
+<p id="four" style="display:none"> hello java script </p>
+
+<button type="button" onclick="document. getElementById('four').style.display='block'"> click me </button>
+
+  <p id="five"> </p>
+<script>
+ document. getElementById('five').innerHTML="my first javaScrip";
+</script>
+
+
+<script>
+ function myFunction(){
+document.getElementById("six").innerHTML="paragraph changed";
+}
+</script>
+<p id="six"> A paragraph </p>
+<button type="button" onclick="myFunction()">try it </button>
+
+<p id="seven"> A paragraph </p>
+<button type="button" onclick="myFunction()">try it </button>
+<p> (my function is stored in an extranal file called "java.js")</p>
+<script src="java.js"> </script>
+
+<p id="eight">
+<script>
+document.getElementById("eight").innerHTML=5+6;
+</script>
+
+<p id="nine">
+<script>
+document.getElementById("nine").innerHTML="5"+"6";
+</script>
+
+<p id="ten">
+<script>
+document.getElementById("ten").innerHTML="5+6";
+document.write(5+6);
+window.alert(5+6);
+console.log(5+6);
+</script>
+<br>
+<p id="eleven">
+<script>
+document.getElementById("eleven").innerHTML="5+6"; <br>
+document.write(5+6);
+window.alert(5+6);
+console.log(5+6);
+</script>
+<button onclick="document.write(5+6)"> try it </button>
+
+<p id="twels"> </p>
+<script>
+ var X,Y,Z;
+X=5;
+Y=6;
+Z=X+Y;
+document.getElementById("twels").innerHTML=Z;
+</script>
+
+</body>
+</html>
