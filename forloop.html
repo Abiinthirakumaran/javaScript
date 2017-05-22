@@ -1,0 +1,42 @@
+<html>
+<body>
+  <p id="demo"> </p>
+  <script>
+  var text="";
+  var i ;
+  for(i=0; i<5; i++){
+    text+="this number is " + i + "<br>";
+  }
+document.getElementById("demo").innerHTML =text;
+</script>
+
+<p id="demo1"> </p>
+<script>
+var text="";
+var i ;
+for(i=10; i>0; i--){
+  text+="this number is " + i + "<br>";
+}
+document.getElementById("demo1").innerHTML =text;
+</script>
+
+<p id="demo2"></p>
+
+<script>
+var fruits = ["apple", "mango", "orange", "pineapple"];
+
+var i ;
+var  x= fruits.length;
+var text = "";
+
+for (; i < x; ) {
+    text += fruits[i] + "<br>";
+    i++;
+}
+document.getElementById("demo2").innerHTML = text;
+</script>
+
+
+
+</body>
+</html>
